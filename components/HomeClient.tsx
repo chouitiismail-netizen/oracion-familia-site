@@ -64,10 +64,10 @@ export default function HomeClient({ allPages }: HomeClientProps) {
     <div className="min-h-screen">
       {/* Hero Section */}
       <Hero
-        title="Oraciones para la ansiedad"
-        subtitle="Oraciones y reflexiones originales para calmar la mente, soltar preocupaciones y descansar con fe"
+        title="Oraciones de la noche"
+        subtitle="Oraciones y reflexiones originales para cerrar el día, agradecer, pedir perdón y descansar en paz con Dios"
         ctaText="Comenzar a rezar"
-        ctaHref={primaryPrayer ? `/${primaryPrayer.slug}` : '/oraciones-para-la-ansiedad'}
+        ctaHref={primaryPrayer ? `/${primaryPrayer.slug}` : '/oraciones-de-la-noche'}
       />
 
       {/* Main Content */}
@@ -80,7 +80,7 @@ export default function HomeClient({ allPages }: HomeClientProps) {
                 Comienza aquí
               </h2>
               <p className="text-[var(--muted)]">
-                Las oraciones esenciales para calmar la ansiedad y encontrar paz
+                Las oraciones esenciales para cerrar el día con paz y gratitud
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -99,7 +99,7 @@ export default function HomeClient({ allPages }: HomeClientProps) {
                 Destacadas
               </h2>
               <p className="text-[var(--muted)]">
-                Oraciones para situaciones específicas que generan ansiedad
+                Oraciones para proteger, perdonar y descansar confiando en Dios
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -1,25 +1,25 @@
 // Curated content configuration for homepage sections
 
 export const START_HERE_SLUGS = [
-  'oraciones-para-la-ansiedad',
-  'oracion-para-calmar-la-ansiedad',
-  'oracion-para-la-ansiedad-nocturna',
-  'oracion-para-soltar-preocupaciones',
-  'oracion-para-la-mente-inquieta',
-  'oracion-para-tranquilizar-el-corazon',
+  'oraciones-de-la-noche',
+  'oracion-antes-de-dormir',
+  'oracion-para-dormir-en-paz',
+  'oracion-para-terminar-el-dia-con-gratitud',
+  'oracion-para-descansar-en-dios',
+  'oracion-para-entregar-el-dia-a-dios',
 ];
 
 export const FEATURED_SLUGS = [
-  'oracion-para-ataques-de-ansiedad',
-  'oracion-para-la-angustia',
-  'oracion-para-dejar-el-miedo',
-  'oracion-para-la-ansiedad-antes-de-dormir',
-  'oracion-para-respirar-y-confiar-en-dios',
-  'oracion-corta-para-la-ansiedad',
+  'oracion-para-pedir-perdon-antes-de-dormir',
+  'examen-de-conciencia-de-la-noche',
+  'oracion-para-proteger-mi-hogar-en-la-noche',
+  'oracion-por-mi-familia-antes-de-dormir',
+  'oracion-para-dormir-sin-miedo',
+  'oracion-para-la-noche-cuando-estoy-preocupado',
 ];
 
 // Primary prayer for main CTA
-export const PRIMARY_PRAYER_SLUG = 'oraciones-para-la-ansiedad';
+export const PRIMARY_PRAYER_SLUG = 'oraciones-de-la-noche';
 
 // Quick action categories with icons and slugs
 export interface QuickAction {
@@ -30,11 +30,11 @@ export interface QuickAction {
 }
 
 export const QUICK_ACTIONS: QuickAction[] = [
-  { id: 'ansiedad', label: 'Ansiedad', icon: 'anxiety', slug: 'oracion-dormir-sin-ansiedad' },
-  { id: 'gratitud', label: 'Gratitud', icon: 'gratitude', slug: 'oracion-dormir-con-gratitud' },
-  { id: 'proteccion', label: 'Protección', icon: 'protection', slug: 'oracion-proteccion-en-la-noche' },
-  { id: 'familia', label: 'Familia', icon: 'family', slug: 'oracion-familia-antes-de-dormir' },
-  { id: 'confianza', label: 'Confianza', icon: 'trust', slug: 'oracion-confiar-incertidumbre' },
+  { id: 'paz', label: 'Paz', icon: 'anxiety', slug: 'oracion-para-dormir-en-paz' },
+  { id: 'gratitud', label: 'Gratitud', icon: 'gratitude', slug: 'oracion-para-terminar-el-dia-con-gratitud' },
+  { id: 'proteccion', label: 'Protección', icon: 'protection', slug: 'oracion-para-proteger-mi-hogar-en-la-noche' },
+  { id: 'familia', label: 'Familia', icon: 'family', slug: 'oracion-por-mi-familia-antes-de-dormir' },
+  { id: 'confianza', label: 'Confianza', icon: 'trust', slug: 'oracion-para-confiar-en-dios-al-final-del-dia' },
 ];
 
 // Daily verse for "Santo del día" equivalent

@@ -20,14 +20,14 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://REPLACE_AFTER_VERCE
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: "Oraciones para la ansiedad - Calma tu mente con fe",
-  description: "Oraciones y reflexiones originales para calmar la mente, soltar preocupaciones y descansar con fe.",
-  keywords: ["oraciones para la ansiedad", "oraciones católicas", "calmar ansiedad", "paz interior", "reflexiones espirituales"],
+  title: "Oraciones de la noche - Cierra el día en paz con Dios",
+  description: "Oraciones y reflexiones originales para cerrar el día, agradecer, pedir perdón y descansar en paz con Dios.",
+  keywords: ["oraciones de la noche", "oraciones católicas", "antes de dormir", "paz interior", "reflexiones nocturnas"],
   openGraph: {
-    title: "Oraciones para la ansiedad",
-    description: "Oraciones y reflexiones originales para calmar la mente, soltar preocupaciones y descansar con fe.",
+    title: "Oraciones de la noche",
+    description: "Oraciones y reflexiones originales para cerrar el día, agradecer, pedir perdón y descansar en paz con Dios.",
     url: baseUrl,
-    siteName: "Oraciones para la ansiedad",
+    siteName: "Oraciones de la noche",
     locale: "es_ES",
     type: "website",
   },

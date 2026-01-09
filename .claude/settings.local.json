@@ -7,7 +7,9 @@
       "Bash(xargs:*)",
       "Bash(timeout 10 npm run dev:*)",
       "Bash(cat:*)",
-      "Bash(npm install)"
+      "Bash(npm install)",
+      "Bash(node scripts/generate-pages.js:*)",
+      "Bash(set NODE_OPTIONS=--no-deprecation)"
     ]
   }
 }

@@ -4,12 +4,14 @@ import type { Metadata } from 'next';
 import { getAllPages, getPageBySlug, getRelatedSpiritualPages } from '../../lib/content';
 import Container from '../../components/ui/Container';
 import Card from '../../components/ui/Card';
+import JsonLd from '../../components/JsonLd';
+import { getArticlePageSchemas } from '../../lib/seo';
 
 export async function generateStaticParams() {
     return getAllPages().map((p) => ({ slug: p.slug }));
 }
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://REPLACE_AFTER_VERCEL.vercel.app";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://oracion-familia-site.vercel.app";
 
 export async function generateMetadata({
     params,
@@ -41,6 +43,11 @@ export async function generateMetadata({
             locale: "es_ES",
             type: "article",
         },
+        twitter: {
+            card: "summary",
+            title: page.metaTitle || page.title,
+            description: page.metaDescription,
+        },
     };
 }
 
@@ -63,7 +70,16 @@ export default async function ArticlePage({
     const sections = parseContent(page.content);
 
     return (
-        <div className="min-h-screen pb-8">
+        <>
+            <JsonLd data={getArticlePageSchemas({
+                title: page.title,
+                description: page.metaDescription,
+                slug: page.slug,
+                publishedAt: page.publishedAt,
+                updatedAt: page.updatedAt,
+                category: page.category,
+            })} />
+            <div className="min-h-screen pb-8">
             <Container maxWidth="md" className="pt-6 space-y-6">
                 {/* Breadcrumb - only for spiritual pages */}
                 {!isLegal && (
@@ -159,6 +175,7 @@ export default async function ArticlePage({
                 </div>
             </Container>
         </div>
+        </>
     );
 }
 

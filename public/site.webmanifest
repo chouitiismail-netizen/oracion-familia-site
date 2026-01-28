@@ -1,0 +1,18 @@
+{
+  "name": "Oraciones por la familia",
+  "short_name": "Oraciones Familia",
+  "description": "Oraciones originales para bendecir el hogar, pedir unidad y reconciliación, y confiar la familia a Dios cada día.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f7f6",
+  "theme_color": "#d17b27",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
